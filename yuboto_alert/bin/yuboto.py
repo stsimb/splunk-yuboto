@@ -5,11 +5,11 @@ import urllib
 from urllib2 import urlopen, URLError, HTTPError
 
 SPLUNK_HOME = os.environ.get("SPLUNK_HOME")
-EGG_DIR = SPLUNK_HOME + "/etc/apps/yuboto_alert/bin/"
+WHL_DIR = SPLUNK_HOME + "/etc/apps/yuboto_alert/bin/"
 
-for filename in os.listdir(EGG_DIR):
-    if filename.endswith(".egg"):
-        sys.path.append(EGG_DIR + filename)
+for filename in os.listdir(WHL_DIR):
+    if filename.endswith(".whl"):
+        sys.path.append(WHL_DIR + filename)
 
 def send_message(settings):
     print >> sys.stderr, "DEBUG Sending message with settings %s" % settings
