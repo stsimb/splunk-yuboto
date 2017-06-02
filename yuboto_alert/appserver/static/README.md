@@ -1,5 +1,4 @@
-# splunk-yuboto
-SMS Alerting from Splunk with Yuboto
+## Splunk Yuboto Modular Alert v1.0
 
 ## Overview
 
@@ -12,7 +11,7 @@ This is a Splunk Modular Alert for sending SMS messages using Yuboto.
 
 ## Setup
 
-* Copy yuboto_alert/ to your $SPLUNK_HOME/etc/apps directory.
+* Untar the release to your $SPLUNK_HOME/etc/apps directory.
 * Restart Splunk.
 
 ## Configuration
@@ -25,8 +24,6 @@ Once your Yuboto account is setup you will then be able to obtain your API key f
 
 To enter these values in Splunk, just browse to Settings -> Alert Actions -> Yuboto SMS Alerts -> Setup Yuboto SMS Alerting.
 
-![configuration](configuration.png "yuboto alert configuration")
-
 ## Using
 
 Perform a search in Splunk and then navigate to : Save As -> Alert -> Trigger Actions -> Add Actions -> Yuboto SMS Alerts.
@@ -38,8 +35,6 @@ On this dialogue you can enter your "to number" and "SMS message".
 For the SMS message field, token substitution can be used just the same as for email alerts.
 
 http://docs.splunk.com/Documentation/Splunk/latest/Alert/EmailNotificationTokens
-
-![alert](alert.png "yuboto alert definition")
 
 ## Logging
 

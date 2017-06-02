@@ -1,0 +1,18 @@
+<setup>
+    <block title="Yuboto SMS Alerts">
+        <text>Configure Yuboto SMS Alerting</text>
+    </block>
+
+    <block title="Global Settings" endpoint="admin/alert_actions" entity="yuboto">
+        <input field="param.apikey">
+            <label>API Key</label>
+            <type>text</type>
+        </input>
+        <input field="param.sender">
+            <label>SMS Sender</label>
+            <type>text</type>
+        </input>
+        
+    </block>
+
+</setup>
