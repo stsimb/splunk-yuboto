@@ -45,8 +45,8 @@ Or you can search directly in Splunk: index=_internal sourcetype=splunkd compone
 
 ## Troubleshooting
 
-1. Is your "from number" correct and valid for sending SMS messages via Yuboto ?
+1. Is your "SMS Sender" correct and valid for sending SMS messages via Yuboto ?
    Length of sender must be 16 digits numeric or 11 digits alphanumeric.
-2. Id your API key correct ?
+2. Is your API key correct ?
 3. Are your alerts actually firing ?
 
